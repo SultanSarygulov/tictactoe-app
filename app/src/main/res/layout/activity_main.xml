@@ -6,52 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <TextView
         android:id="@+id/tile_1_1"
-        style="@style/WhiteBox"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="24dp"
+        android:background="@drawable/soft_square_black"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="70sp"
         app:layout_constraintBottom_toTopOf="@+id/tile_1_2"
         app:layout_constraintEnd_toStartOf="@+id/tile_2_1" />
 
     <TextView
         android:id="@+id/tile_2_1"
-        style="@style/WhiteBox"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginBottom="24dp"
+        android:background="@drawable/soft_square_black"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="70sp"
         app:layout_constraintBottom_toTopOf="@+id/tile_2_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tile_3_1"
-        style="@style/WhiteBox"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="24dp"
         android:layout_marginBottom="24dp"
+        android:background="@drawable/soft_square_black"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="70sp"
         app:layout_constraintBottom_toTopOf="@+id/tile_3_2"
         app:layout_constraintStart_toEndOf="@+id/tile_2_1" />
 
     <TextView
         android:id="@+id/tile_1_2"
-        style="@style/WhiteBox"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/soft_square_black"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tile_2_2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tile_2_2"
-        style="@style/WhiteBox"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:background="@drawable/soft_square_black"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,42 +78,94 @@
 
     <TextView
         android:id="@+id/tile_3_2"
-        style="@style/WhiteBox"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="24dp"
+        android:background="@drawable/soft_square_black"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tile_2_2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tile_1_3"
-        style="@style/WhiteBox"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/soft_square_black"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="70sp"
         app:layout_constraintEnd_toStartOf="@+id/tile_2_3"
         app:layout_constraintTop_toBottomOf="@+id/tile_1_2" />
 
     <TextView
         android:id="@+id/tile_2_3"
-        style="@style/WhiteBox"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="24dp"
+        android:background="@drawable/soft_square_black"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="70sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tile_2_2" />
 
     <TextView
         android:id="@+id/tile_3_3"
-        style="@style/WhiteBox"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
+        android:background="@drawable/soft_square_black"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="70sp"
         app:layout_constraintStart_toEndOf="@+id/tile_2_3"
         app:layout_constraintTop_toBottomOf="@+id/tile_3_2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/againButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="false"
+        android:clickable="true"
+        android:cropToPadding="false"
+        app:backgroundTint="#FF9800"
+        app:fabSize="auto"
+        app:layout_constraintEnd_toEndOf="@+id/tile_2_3"
+        app:layout_constraintStart_toStartOf="@+id/tile_2_3"
+        app:layout_constraintTop_toBottomOf="@+id/tile_2_3"
+        app:srcCompat="@drawable/ic_again"
+        app:useCompatPadding="false" />
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/soft_square_red"
+        app:layout_constraintBottom_toTopOf="@+id/tile_1_1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/soft_square_black"
+        app:layout_constraintBottom_toTopOf="@+id/tile_3_1"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
