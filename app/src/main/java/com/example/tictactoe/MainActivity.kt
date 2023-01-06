@@ -56,17 +56,21 @@ class MainActivity : AppCompatActivity() {
 
         var currentSquare = blackSquare
         var sign = ""
+        var player1square = blackSquare
+        var player2square = blackSquare
+
         if (turn % 2 == 0){
             currentSquare = redSquare
             sign = "X"
-            binding.player1.setBackgroundResource(blackSquare)
-            binding.player2.setBackgroundResource(blueSquare)
+
+            player1square = blackSquare
+            player2square = blueSquare
         } else {
             currentSquare = blueSquare
             sign = "O"
-            binding.player1.setBackgroundResource(redSquare)
-            binding.player2.setBackgroundResource(blackSquare)
 
+            player1square = redSquare
+            player2square = blackSquare
         }
         if (view.text == ""){
 
@@ -108,6 +112,10 @@ class MainActivity : AppCompatActivity() {
                     view.text = sign
                 }
             }
+
+            binding.player1.setBackgroundResource(player1square)
+            binding.player2.setBackgroundResource(player2square)
+
             turn++
         }
 
